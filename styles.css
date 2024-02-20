@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("./assets/images/bg.jpg");
+    background-position: center center ;
+    background-size: max(900px,100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+    
+}
+.main .box{
+    height:70vh;
+    width:100%;
+    opacity: 0.69;
+    position: absolute;
+    top:0;
+    background-color: black;
+}
+nav{   
+    max-width:60vw;
+    display: flex;
+    justify-content:space-between; 
+    margin: auto;
+    align-items: center;
+    height: 62px;
+    
+}
+nav img{
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative; /* z index only works if position is anything other than static */
+    padding: 0 30px;
+    
+}
+.hero> :first-child{
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 300;
+    font-size: 19px;
+    text-align: center;
+}
+.separation{
+    height: 9px;
+    background-color:rgb(35, 35, 35);
+}
+.btn{
+    padding: 6px;
+    font-weight: bold;
+    background-color: white;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 8px 24px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.main input{
+    padding: 9px 100px 9px 9px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color:rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(240,239,238,0.4);
+}
+.btn-red-sm{
+    background-color: red;
+    color:white;
+}
