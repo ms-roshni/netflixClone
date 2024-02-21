@@ -125,6 +125,7 @@ nav button {
   margin: auto;
   color: white;
 }
+
 .secImg {
   position: relative;
 }
@@ -136,9 +137,9 @@ nav button {
 }
 .secImg video {
   position: absolute;
-  top: 58px;
-  right: 0px;
-  width: 465px;
+  top: 90px;
+  right: 10px;
+  width: 470px;
 }
 .thirdImg {
   position: relative;
@@ -219,8 +220,55 @@ footer {
   max-width: 80vw;
   margin: auto;
 }
+
 footer span {
   color: white;
   opacity: 0.7;
   padding: 20px 0px 0px 69px;
+}
+@media screen and (max-width: 800px) {
+  .first {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  nav {
+    max-width: 70vw;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-class {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80vw;
+    margin: auto;
+    gap: 55px;
+  }
+  .hero > :first-child {
+    font-weight: 900;
+    font-size: 32px;
+    text-align: center;
+  }
+  .hero > :nth-child(2) {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+  }
+  .hero > :nth-child(3) {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+  }
+  .faq h2 {
+  font-family: "Martel Sans", sans-serif;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
 }
